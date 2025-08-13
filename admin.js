@@ -1,6 +1,7 @@
 // ======= Approved Admins =======
 const approvedAdmins = {
-  "faith": { password: "1234", name: "Faith Admin" },
+  "Faith": { password: "4708", name: "Faith Admin" },
+  "Happiness": { password: "1513", name: "Happiness Madu" },
   "damian": { password: "abcd", name: "Damian" },
   "ada": { password: "pass", name: "Ada" }
 };
