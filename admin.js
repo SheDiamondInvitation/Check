@@ -15,8 +15,8 @@ const tokenPage = document.getElementById("tokenPage");
 const adminPanel = document.getElementById("adminPanel");
 
 // ======= Repo Details =======
-const repoOwner = "echosvile";
-const repoName = "SheDiamondApprovedInvitationList";
+const repoOwner = "SheDiamondInvitation";
+const repoName = "Check";
 const filePath = "list.json";
 
 // ======= Login Step =======
