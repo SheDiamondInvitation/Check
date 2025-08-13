@@ -135,7 +135,7 @@ async function addSingle() {
     const adminNumber = document.getElementById("singleAdminNumber").value.trim();
 
     if (!/^\d{11}$/.test(phone)) return alert("Enter valid 11-digit phone number");
-    if (!name || !reservation || !/^\d{13}$/.test(adminNumber)) return alert("Fill all fields correctly");
+    if (!name || !reservation || !adminNumber) return alert("Fill all fields correctly");
 
     let { data, sha } = await fetchList();
 
@@ -164,7 +164,7 @@ async function addBatch() {
     const reservation = document.getElementById("batchReservation").value.trim();
     const adminNumber = document.getElementById("batchAdminNumber").value.trim();
 
-    if (!batchText || !reservation || !/^\d{13}$/.test(adminNumber)) return alert("Fill all batch fields correctly");
+    if (!batchText || !reservation || !adminNumber) return alert("Fill all batch fields correctly");
 
     let { data, sha } = await fetchList();
     const lines = batchText.split("\n");
@@ -173,7 +173,7 @@ async function addBatch() {
 
     for (let line of lines) {
       const [phone, name] = line.split(",").map(v => v.trim());
-      if (!/^\d{13}$/.test(phone) || !name) {
+      if (!/^\d{11}$/.test(phone) || !name) {
         skipped.push(`Invalid: "${line}"`);
         continue;
       }
