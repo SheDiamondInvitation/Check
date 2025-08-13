@@ -1,0 +1,32 @@
+{
+  "07034174708": {
+    "name": "Faith B.",
+    "reservation": "821/OI.CAE/4708",
+    "adminNumber": "07034174708"
+  },
+  "08012345678": {
+    "name": "John Doe",
+    "reservation": "RES123",
+    "adminNumber": "08087654321"
+  },
+  "08023456789": {
+    "name": "Jane Smith",
+    "reservation": "RES456",
+    "adminNumber": "08087654321"
+  },
+  "07034174707": {
+    "name": "Faith",
+    "reservation": "21/OI/CAE/LOA/4672",
+    "adminNumber": "07034174708"
+  },
+  "09067647766": {
+    "name": "MA",
+    "reservation": "821/OI/CAE/4708",
+    "adminNumber": "07034174708"
+  },
+  "08128426458": {
+    "name": "Tesst 2",
+    "reservation": "821/OI/CAE/4708",
+    "adminNumber": "07034174708"
+  }
+}

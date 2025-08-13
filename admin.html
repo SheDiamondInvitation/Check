@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<title>SheDiamond Admin Panel</title>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    background: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  .login-container, .token-container {
+    background: white;
+    border-radius: 10px;
+    padding: 2rem;
+    width: 90%;
+    max-width: 350px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    text-align: center;
+  }
+  .login-container img, .token-container img {
+    width: 100px;
+    margin-bottom: 1rem;
+  }
+  h2 {
+    margin-bottom: 1rem;
+    color: #333;
+  }
+  input, textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 1rem;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    outline: none;
+  }
+  input[type="tel"] {
+    -webkit-appearance: none;
+    appearance: none;
+  }
+  button {
+    background: #1877f2;
+    color: white;
+    font-size: 1rem;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    width: 100%;
+  }
+  button:hover {
+    background: #166fe0;
+  }
+  .back-btn {
+    background: #ccc;
+    color: black;
+    margin-top: 1rem;
+  }
+  .logout-btn {
+    background: #d9534f;
+    color: white;
+    margin-top: 1rem;
+  }
+  .hidden {
+    display: none;
+  }
+</style>
+</head>
+<body>
+
+<!-- Login Page -->
+<div class="login-container" id="loginPage">
+  <img src="logo.png" alt="SheDiamond Logo">
+  <h2>Admin Login</h2>
+  <input type="text" id="username" placeholder="Username" autocomplete="off">
+  <input type="password" id="password" placeholder="Password" autocomplete="off">
+  <button onclick="loginAdmin()">Login</button>
+</div>
+
+<!-- Token Page -->
+<div class="token-container hidden" id="tokenPage">
+  <img src="logo.png" alt="SheDiamond Logo">
+  <h2>Enter GitHub Token</h2>
+  <input type="text" id="githubToken" placeholder="GitHub Token" autocomplete="off">
+  <button onclick="verifyToken()">Continue</button>
+  <button class="back-btn" onclick="goBack()">Back</button>
+</div>
+
+<!-- Main Admin Panel -->
+<div id="adminPanel" class="hidden" style="padding: 1rem; max-width: 500px; margin: auto;">
+  <h2 id="welcomeText"></h2>
+
+  <h3>Add Single Entry</h3>
+  <input type="tel" id="singlePhone" placeholder="Phone Number" pattern="[0-9]*" inputmode="numeric" maxlength="11">
+  <input type="text" id="singleName" placeholder="Full Name">
+  <input type="text" id="singleReservation" placeholder="Reservation Code">
+  <input type="tel" id="singleAdminNumber" placeholder="Admin Phone" pattern="[0-9]*" inputmode="numeric" maxlength="11">
+  <button onclick="addSingle()">Add Entry</button>
+
+  <h3>Batch Entry</h3>
+  <textarea id="batchInput" placeholder="Format: phone, name (one per line)"></textarea>
+  <input type="text" id="batchReservation" placeholder="Reservation Code for All">
+  <input type="tel" id="batchAdminNumber" placeholder="Admin Phone for All" pattern="[0-9]*" inputmode="numeric" maxlength="11">
+  <button onclick="addBatch()">Add Batch</button>
+
+  <button class="logout-btn" onclick="logoutAdmin()">Logout</button>
+</div>
+
+<script src="admin.js"></script>
+</body>
+</html>

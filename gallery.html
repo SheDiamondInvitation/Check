@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+  <title>SheDiamond Gallery</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background-color: #0f0f0f;
+      color: #fff;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #d63384;
+      padding: 1.2rem;
+      text-align: center;
+      color: #fff;
+      font-size: 1.4rem;
+      font-weight: bold;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+      gap: 12px;
+      padding: 1.5rem;
+    }
+
+    .gallery img {
+      width: 100%;
+      border-radius: 12px;
+      object-fit: cover;
+      transition: transform 0.3s ease;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+
+    .back-btn {
+      display: block;
+      margin: 20px auto;
+      padding: 12px 24px;
+      text-align: center;
+      background: #fff;
+      color: #d63384;
+      border: none;
+      border-radius: 8px;
+      font-size: 14px;
+      font-weight: bold;
+      text-decoration: none;
+      width: fit-content;
+    }
+
+    @media screen and (max-width: 480px) {
+      .gallery {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>📸 SheDiamond Moments Gallery</header>
+
+  <div class="gallery">
+    <img src="gal1.jpg" alt="Event 1" />
+    <img src="gal2.jpg" alt="Event 2" />
+    <img src="gal3.jpg" alt="Event 3" />
+    <img src="gal4.jpg" alt="Event 4" />
+    <img src="gal5.jpg" alt="Event 5" />
+    <img src="gal6.jpg" alt="Event 6" />
+  </div>
+
+  <a class="back-btn" href="index.html">🔙 Back to Invitation Checker</a>
+
+</body>
+</html>
