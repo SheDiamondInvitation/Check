@@ -249,13 +249,8 @@
     </p>
     <p>Your reservation code: <strong style="color:#ff006e;">${rec.reservation}</strong> has been sent to <strong>${phone}</strong>.</p>
     <p>Kindly take a screenshot and present this at the reception to get your ticket.</p>
-    <a id="whatsappLink" class="whatsapp-btn" target="_blank">💬 Confirm Invitation</a>
-    <button class="back-btn" onclick="closePopup()">Back</button>
-  `;
-  // Dynamically set the WhatsApp link using admin number from JSON
-  const waMessage = "Thank you Admin, I got my reservation and I will be there";
-  const waLink = `https://wa.me/${rec.adminNumber}?text=${encodeURIComponent(waMessage)}`;
-  document.getElementById("whatsappLink").href = waLink;
+    <a href="${rec.adminNumber}?text=Hello%20Admin%2C%20I%20(${rec.name})%20got%20my%20reservation%20and%20I%20will%20attend." 
+   class="whatsapp-btn" target="_blank">💬 Confirm Invitation</a>
 
   // Show the popup
   popup.style.display = "flex";
