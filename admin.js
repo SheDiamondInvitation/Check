@@ -3,6 +3,8 @@ const approvedAdmins = {
   "faith": { password: "4708", name: "Faith Admin" },
   "happiness": { password: "1513", name: "Mrs. Madu" },
   "damian": { password: "3725", name: "Damian" },
+   "adeola": { password: "3735", name: "Mrs. Adeola" },
+   "asabe": { password: "mummy", name: "Amb. Asabe" },
   "ada": { password: "pass", name: "Ada" }
 };
 
