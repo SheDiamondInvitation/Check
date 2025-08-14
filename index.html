@@ -241,19 +241,19 @@
   if (data && data[phone]) {
     const rec = data[phone];
 
-      popupContent.innerHTML = `
-    <h3>🎉 Congratulations ${rec.name}!</h3>
-    <p>You’ve been selected to attend <strong>The SheDiamond August Edition Event</strong>.</p>
-    <p style="font-style: italic; font-weight: bold; color: #ff66cc;">
-      Holding this Saturday, 2nd Aug, 2025 @ Ground Floor Hall, St. Leo Catholic Church, Ikeja, Lagos at 10:00 AM
-    </p>
-    <p>Your reservation code: <strong style="color:#ff006e;">${rec.reservation}</strong> has been sent to <strong>${phone}</strong>.</p>
-    <p>Kindly take a screenshot and present this at the reception to get your ticket.</p>
-    <a href="${rec.adminNumber}?text=Hello%20Admin%2C%20I%20(${rec.name})%20got%20my%20reservation%20and%20I%20will%20attend." 
-   class="whatsapp-btn" target="_blank">💬 Confirm Invitation</a>
+    popupContent.innerHTML = `
+      <h3>🎉 Congratulations ${rec.name}!</h3>
+      <p>You’ve been selected to attend <strong>The SheDiamond August Edition Event</strong>.</p>
+      <p style="font-style: italic; font-weight: bold; color: #ff66cc;">
+        Holding this Saturday, 2nd Aug, 2025 @ Ground Floor Hall, St. Leo Catholic Church, Ikeja, Lagos at 10:00 AM
+      </p>
+      <p>Your reservation code: <strong style="color:#ff006e;">${rec.reservation}</strong> has been sent to <strong>${phone}</strong>.</p>
+      <p>Kindly take a screenshot and present this at the reception to get your ticket.</p>
+      <a href="${rec.adminNumber}?text=Thank%20you%20Admin%2C%20I%20got%20my%20reservation%20and%20I%20will%20be%20there" class="whatsapp-btn" target="_blank">💬 Chat Admin</a>
+      <button class="back-btn" onclick="closePopup()">Back</button>
+    `;
 
-  // Show the popup
-  popup.style.display = "flex";
+    popup.style.display = "flex";
 
   } else {
     popupContent.innerHTML = `
