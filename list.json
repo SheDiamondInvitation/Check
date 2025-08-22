@@ -103,5 +103,10 @@
     "name": "Admin Faith B",
     "reservation": "821/OI/CAE/FB/4708",
     "adminNumber": "https://api.whatsapp.com/send?phone=2347034174708&text=Thank%20You%2C%20I%20Have%20Confirmed%20My%20Reservation%20and%20I%20Will%20Be%20There"
+  },
+  "07060764631": {
+    "name": "Oluwaseun Lydia",
+    "reservation": "821/OI/CAE/FB/4708",
+    "adminNumber": "https://wa.link/kqshm0"
   }
 }
