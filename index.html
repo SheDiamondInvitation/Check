@@ -143,7 +143,7 @@
 
   // Countdown
   const countdownEl=document.getElementById('countdown');
-  const eventDate=new Date("August 23, 2025 9:30:00").getTime();
+  const eventDate=new Date("August 31, 2025 9:30:00").getTime();
   const units=['Days','Hours','Minutes','Seconds'];
   const spans={};
 
@@ -245,11 +245,11 @@
       <h3>🎉 Congratulations ${rec.name}!</h3>
       <p>You’ve been selected to attend <strong>The SheDiamond August Edition Event</strong>.</p>
       <p style="font-style: italic; font-weight: bold; color: #ff66cc;">
-        Holding this Saturday,  23rd Aug, 2025 @ 2nd Floor, No. 91 Obafemi Awolowo Road, Opposite Baffi Furniture, Balogun Bus Stop, Ikeja, Lagos by 9:30AM
+        Holding this Saturday,  31st Aug, 2025 @ Ground Floor, St. Leo Catholic Church, Toyin Street, Ikeja, Lagos by 1:30PM
       </p>
       <p>Your reservation code: <strong style="color:#ff006e;">${rec.reservation}</strong> has been sent to <strong>${phone}</strong>.</p>
       <p>Kindly take a screenshot and present this at the reception to get your ticket.</p>
-      <a href="${rec.adminNumber}?text=Thank%20you%20Admin%2C%20I%20got%20my%20reservation%20and%20I%20will%20be%20there" class="whatsapp-btn" target="_blank">💬 Chat Admin</a>
+      <a href="${rec.adminNumber}?text=Thank%20you%20Admin%2C%20I%20got%20my%20reservation%20and%20I%20will%20be%20there" class="whatsapp-btn" target="_blank">💬 Confirm Invitation</a>
       <button class="back-btn" onclick="closePopup()">Back</button>
     `;
 
