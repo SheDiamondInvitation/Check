@@ -4,6 +4,7 @@ const approvedAdmins = {
   "happiness": { password: "1513", name: "Mrs. Madu" },
   "damian": { password: "1126", name: "Damian" },
    "adeola": { password: "3735", name: "Mrs. Adeola" },
+  "adeyinka": { password: "4720", name: "Mrs. Adeyinka" },
    "asabe": { password: "mummy", name: "Amb. Asabe" },
   "ada": { password: "pass", name: "Ada" }
 };
