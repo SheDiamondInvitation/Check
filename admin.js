@@ -1,6 +1,6 @@
 // ======= Approved Admins =======
 const approvedAdmins = {
-  "faith": { password: "1126", name: "Faith Admin" },
+  "teamfb": { password: "CAEFB", name: "Teammate" },
   "happiness": { password: "1513", name: "Mrs. Madu" },
   "damian": { password: "1126", name: "Damian" },
    "adeola": { password: "3735", name: "Mrs. Adeola" },
