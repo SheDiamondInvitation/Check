@@ -14,7 +14,7 @@
 
   /* HERO SECTION */
   section { min-height:100vh; display:flex; flex-direction:column; justify-content:center; align-items:center; text-align:center; position:relative; padding:3rem 1.5rem; }
-  .hero { background:url('background.JPG') center center no-repeat; background-size:cover; position:relative; overflow:hidden; }
+  .hero { background:url('background.jpg') center center no-repeat; background-size:cover; position:relative; overflow:hidden; }
   .hero::before { content:''; position:absolute; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.3); }
 
   /* Thicker hero box */
@@ -246,13 +246,13 @@
 
     popupContent.innerHTML = `
       <h3>🎉 Congratulations ${rec.name}!</h3>
-      <p>You’ve been selected to attend <strong>The SheDiamond November Edition</strong>.</p>
+      <p>You’ve been selected to attend <strong>The SheDiamond Grand Finale</strong>.</p>
       <p style="font-style: italic; font-weight: bold; color: #ff66cc;">
-        Holding on Saturday, 1st November, 2025 @ 2nd Floor, 91 Obafemi Awolowo Road, Opp. Baffi Furniture, Ikeja, Lagos by 8:30AM.
+        This Saturday, 6th December, 2025 @ Ground Floor Hall, St. Leo's Catholic Church, Toyin Street, Ikeja. TIME: 1:00PM.
       </p>
-      <p>Your reservation code: <strong style="color:#ff006e;">${rec.reservation}</strong> has been sent to <strong>${phone}</strong>.</p>
+      <p>Your TICKET ID: <strong style="color:#ff006e;">${rec.reservation}</strong> has been sent to <strong>${phone}</strong>.</p>
       <p>Kindly take a screenshot of this and present this at the reception to get your ticket.</p>
-      <a href="${rec.adminNumber}?text=Thank%20you%20Admin%2C%20I%20got%20my%20reservation%20and%20I%20will%20be%20there" class="whatsapp-btn" target="_blank">💬 Confirm Invitation</a>
+      <a href="${rec.adminNumber}?text=Thanks%20you%20Admin%2C%20I%20confirmed%20my%20reservation%20and%20I%20will%20be%20there" class="whatsapp-btn" target="_blank">💬 Confirm Invitation</a>
       <button class="back-btn" onclick="closePopup()">Back</button>
     `;
 
